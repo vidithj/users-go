@@ -49,7 +49,7 @@ func MakeUpdateUserAccess(s Service) endpoint.Endpoint {
 		if !ok {
 			return nil, errors.New("Bad Request")
 		}
-		return "", s.UpdateUserAccess(ctx, req)
+		return s.UpdateUserAccess(ctx, req)
 	}
 }
 

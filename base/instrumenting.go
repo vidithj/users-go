@@ -52,13 +52,13 @@ func (s instrumentingService) GetUser(ctx context.Context, username string) (res
 	return s.next.GetUser(ctx, username)
 }
 
-func (s instrumentingService) UpdateUserAccess(ctx context.Context, req model.UpdateAccessRequest) (err error) {
+func (s instrumentingService) UpdateUserAccess(ctx context.Context, req model.UpdateAccessRequest) (resp string, err error) {
 	defer func(begin time.Time) {
 		s.instrument(begin, "UpdateUserAccess", err)
 	}(time.Now())
 	return s.next.UpdateUserAccess(ctx, req)
 }
-func (s instrumentingService) DoorAuthenticate(ctx context.Context, req model.DoorAuthenticate) (hasaccess bool, err error) {
+func (s instrumentingService) DoorAuthenticate(ctx context.Context, req model.DoorAuthenticate) (hasaccess string, err error) {
 	defer func(begin time.Time) {
 		s.instrument(begin, "DoorAuthenticate", err)
 	}(time.Now())
