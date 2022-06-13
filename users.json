@@ -1,0 +1,4 @@
+{"total_rows":2,"offset":0,"rows":[
+{"id":"abc","key":"abc","value":{"rev":"1-b3b5af6728c547c888f76e6efccaaad3"},"doc":{"_id":"abc","_rev":"1-b3b5af6728c547c888f76e6efccaaad3","username":"abc","firstname":"abc","lastname":"abc","isadmin":false,"dooraccess":{"Door1":true,"Door2":false}}},
+{"id":"vjohri","key":"vjohri","value":{"rev":"44-a2b7f8f96c440160492d736973e58bb5"},"doc":{"_id":"vjohri","_rev":"44-a2b7f8f96c440160492d736973e58bb5","username":"vjohri","firstname":"Vidith","lastname":"Johri","isadmin":true,"dooraccess":{"Door1":true,"Door2":true}}}
+]}
