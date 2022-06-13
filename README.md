@@ -1,4 +1,4 @@
-# events-go
+# users-go
 This is an internal service which is used to save the user related information. 
 This service saves user information and user access information . The service saves the doornumber as a map so scaling more doors is easy with no change in structure.
 
