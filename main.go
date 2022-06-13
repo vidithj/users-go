@@ -29,7 +29,7 @@ func main() {
 		serviceName   = flag.String("service.name", "users", "Name of microservice")
 		basePath      = flag.String("service.base.path", "users", "Name of microservice")
 		version       = flag.String("service.version", "v1", "Version of microservice")
-		httpAddr      = flag.String("http.addr", "127.0.0.1", "This is the addr at which http requests are accepted (Default localhost)")
+		httpAddr      = flag.String("http.addr", "localhost", "This is the addr at which http requests are accepted (Default localhost)")
 		httpPort      = flag.Int("http.port", 8081, "This is the port at which http requests are accepted (Default :8080)")
 		metricsPort   = flag.Int("metrics.port", 8083, "HTTP metrics listen address (Default 8082)")
 		dataType      = flag.String("service.datatype", "test", "default Test/qa")
